@@ -24,11 +24,11 @@
                 <li class="menu-item">
                     <img src="img/logo.png" alt="">
                 </li>
-                <li class="menu-links"><a href="home">Home</a></li>
+                <li class="menu-links active"><a href="home">Home</a></li>
                 <li class="menu-links"><a href="about">About</a></li>
                 <li class="menu-links"><a href="portofolio">Portofolio</a></li>
                 <li class="menu-links"><a href="service">Service</a></li>
-                <li class="menu-links active"><a href="blog">Blog</a></li>
+                <li class="menu-links"><a href="blog">Blog</a></li>
                 <li class="menu-links"><a href="contact">Contact</a></li>
                 <li class="email"><a href="#">halcika_7@hotmail.com</a></li>
                 <li class="social-icons">
@@ -45,7 +45,7 @@
             </ul>
         </nav>
         <div class="main-part">
-            <div class="home">
+            <div class="home active">
                 <h4>Hello World</h4>
                 <h1>Mr.Jake Weary</h1>
                 <h3>Web designer & Developer</h3>
@@ -222,7 +222,7 @@
                 </div>
             </div>
 
-            <div class="blog active">
+            <div class="blog">
                 <h1 class="title">My Blog</h1>
 
                 <div class="blog-posts">
@@ -378,6 +378,48 @@
                     </div>
                 </div>
             </div>
+
+            <div class="contact">
+                <div class="google-map"></div>
+                <h1 class="title">Contact with Us</h1>
+                <div class="flex-contact">
+                    <div class="left-flex">
+                        <div class="inputs">
+                            <input class="input" type="text" name="" id="" placeholder="Your name">
+                            <input class="input" type="email" name="" id="" placeholder="Email address">
+                            <input class="input" type="text" name="" id="" placeholder="Subject">
+                            <input class="input" type="tel" name="" id="" placeholder="Mobile">
+                        </div>
+                        <textarea class="textarea" name="" id="" cols="30" rows="10" placeholder="Type your valuable message"></textarea>
+                        <button class="submit-btn" type="submit">Send your message</button>
+                    </div>
+                    <div class="right-flex">
+                        <div class="get-in-touch">
+                            <h3>get in touch</h3>
+                            <p>If you want to work with us,you can contact with me</p>
+                        </div>
+                        <div class="address">
+                            <h3>Address</h3>
+                            <p>12378 South Main Street</p>
+                            <p>New York, NY 777777</p>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Contact information</h3>
+                            <p><strong>Email</strong>:halcika_7@hotmail.com</p>
+                            <p><strong>Phone</strong>:+38761757388</p>
+                        </div>
+                        <div class="follow-us">
+                            <h3>Follow us</h3>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-skype"></i></a>
+                                <a href="#"><i class="fab fa-github-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -417,6 +459,10 @@
             item.addEventListener('click', e => {
                 e.preventDefault();
 
+                if(item.classList.contains('active')){
+                    return;
+                }
+
                 menu_links.forEach(event => {
                     event.classList.remove('active');
                     main_parts.forEach(event => {
@@ -441,6 +487,10 @@
 
             item.addEventListener('click', e => {
                 e.preventDefault();
+
+                if(item.classList.contains('active')){
+                    return;
+                }
 
                 portofolio_tabs.forEach(ev => {
                     ev.classList.remove('active');
