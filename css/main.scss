@@ -283,7 +283,7 @@ a{
                 }
             }
 
-            .portofolio.active{
+            .portfolio.active{
                 .title{
                     font-size: 1.8rem;
 
@@ -339,7 +339,7 @@ a{
         -o-transition: all .3s ease-in-out;
 
         &:hover{
-            color: #e5e5e5;
+            color: #e5e5e5 !important;
             background-color: #4f6df5;
             border: 1px solid #4f6df5;
         }
@@ -490,7 +490,7 @@ a{
     }
 }
 
-.portofolio{
+.portfolio{
     opacity: 0;
     height: 0;
     width: 100%;

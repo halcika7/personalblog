@@ -275,14 +275,14 @@ a {
   .main-content .main-part .about .img {
     width: 65%;
   }
-  .main-content .main-part .portofolio.active .title {
+  .main-content .main-part .portfolio.active .title {
     font-size: 1.8rem;
   }
-  .main-content .main-part .portofolio.active .title:before {
+  .main-content .main-part .portfolio.active .title:before {
     width: 25px;
     margin-right: 5px;
   }
-  .main-content .main-part .portofolio.active .tabs {
+  .main-content .main-part .portfolio.active .tabs {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -292,7 +292,7 @@ a {
             flex-direction: column;
     margin-right: 20px;
   }
-  .main-content .main-part .portofolio.active .tabs .tab-item {
+  .main-content .main-part .portfolio.active .tabs .tab-item {
     font-weight: 500;
     font-size: 1rem;
     line-height: 20px;
@@ -345,7 +345,7 @@ a {
 }
 
 .social-icons a:hover {
-  color: #e5e5e5;
+  color: #e5e5e5 !important;
   background-color: #4f6df5;
   border: 1px solid #4f6df5;
 }
@@ -509,7 +509,7 @@ a {
      object-fit: cover;
 }
 
-.portofolio {
+.portfolio {
   opacity: 0;
   height: 0;
   width: 100%;
@@ -529,7 +529,7 @@ a {
   background-color: #f8faff;
 }
 
-.portofolio.active {
+.portfolio.active {
   height: 100%;
   min-height: 100vh;
   opacity: 1;
@@ -541,12 +541,12 @@ a {
   -o-transition: all .3s ease-in, height 0s;
 }
 
-.portofolio .title {
+.portfolio .title {
   padding: 70px 30px 40px;
   margin: 0;
 }
 
-.portofolio .tabs {
+.portfolio .tabs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -561,7 +561,7 @@ a {
   margin-bottom: 20px;
 }
 
-.portofolio .tabs .tab-item {
+.portfolio .tabs .tab-item {
   font-weight: 600;
   font-size: 1.1rem;
   line-height: 20px;
@@ -578,22 +578,22 @@ a {
   cursor: pointer;
 }
 
-.portofolio .tabs .tab-item.active, .portofolio .tabs .tab-item:hover {
+.portfolio .tabs .tab-item.active, .portfolio .tabs .tab-item:hover {
   background-color: #fff;
   -webkit-box-shadow: 0px 6px 10px 0px rgba(0, 6, 33, 0.1);
   box-shadow: 0px 6px 10px 0px rgba(0, 6, 33, 0.1);
 }
 
-.portofolio .tabs .tab-item.active a, .portofolio .tabs .tab-item:hover a {
+.portfolio .tabs .tab-item.active a, .portfolio .tabs .tab-item:hover a {
   color: #4f6df5;
 }
 
-.portofolio .tabs .tab-item a {
+.portfolio .tabs .tab-item a {
   color: #70757f;
   text-decoration: none;
 }
 
-.portofolio .works {
+.portfolio .works {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -608,7 +608,7 @@ a {
           align-items: center;
 }
 
-.portofolio .works .work {
+.portfolio .works .work {
   display: none;
   position: relative;
   height: 0;
@@ -622,7 +622,7 @@ a {
   -o-transform: translateY(10px);
 }
 
-.portofolio .works .work.active {
+.portfolio .works .work.active {
   -webkit-animation: scale-display .3s;
           animation: scale-display .3s;
   display: block;
@@ -644,7 +644,7 @@ a {
   -o-transition: box-shadow .3s ease-in, transform .3s ease-in;
 }
 
-.portofolio .works .work.active img {
+.portfolio .works .work.active img {
   width: 100%;
   max-width: 280px;
   height: 334px;
@@ -658,7 +658,7 @@ a {
   -o-border-radius: 7px;
 }
 
-.portofolio .works .work.active .details {
+.portfolio .works .work.active .details {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -691,7 +691,7 @@ a {
   color: #fff;
 }
 
-.portofolio .works .work.active .details .icons {
+.portfolio .works .work.active .details .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -703,7 +703,7 @@ a {
       flex-wrap: wrap;
 }
 
-.portofolio .works .work.active .details .icons a {
+.portfolio .works .work.active .details .icons a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -730,21 +730,21 @@ a {
   -o-transition: all .3s ease-in;
 }
 
-.portofolio .works .work.active .details .icons a:not(:last-child) {
+.portfolio .works .work.active .details .icons a:not(:last-child) {
   margin-right: 5px;
 }
 
-.portofolio .works .work.active .details .icons a:hover {
+.portfolio .works .work.active .details .icons a:hover {
   background-color: #fff;
   color: #4f6df5;
 }
 
-.portofolio .works .work.active .details .text p {
+.portfolio .works .work.active .details .text p {
   margin: 0;
   text-transform: uppercase;
 }
 
-.portofolio .works .work.active .details .text p:first-child {
+.portfolio .works .work.active .details .text p:first-child {
   transform: translateY(-20px);
   -webkit-transform: translateY(-20px);
   -moz-transform: translateY(-20px);
@@ -758,7 +758,7 @@ a {
   padding-bottom: 10px;
 }
 
-.portofolio .works .work.active .details .text p:last-child {
+.portfolio .works .work.active .details .text p:last-child {
   transform: translateY(10px);
   -webkit-transform: translateY(10px);
   -moz-transform: translateY(10px);
@@ -773,7 +773,7 @@ a {
   border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.portofolio .works .work.active:hover {
+.portfolio .works .work.active:hover {
   cursor: pointer;
   -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 6, 33, 0.4);
   box-shadow: 0px 10px 20px 0px rgba(0, 6, 33, 0.4);
@@ -784,7 +784,7 @@ a {
   -o-transform: translateY(0px);
 }
 
-.portofolio .works .work.active:hover .details {
+.portfolio .works .work.active:hover .details {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -794,7 +794,7 @@ a {
   -o-transform: translateY(0);
 }
 
-.portofolio .works .work.active:hover .details .text p:first-child {
+.portfolio .works .work.active:hover .details .text p:first-child {
   transform: translateY(0px);
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px);
@@ -802,7 +802,7 @@ a {
   -o-transform: translateY(0px);
 }
 
-.portofolio .works .work.active:hover .details .text p:last-child {
+.portfolio .works .work.active:hover .details .text p:last-child {
   transform: translateY(0px);
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px);
@@ -810,7 +810,7 @@ a {
   -o-transform: translateY(0px);
 }
 
-.portofolio .works .work.out {
+.portfolio .works .work.out {
   -webkit-animation: scale-display--reversed .3s;
           animation: scale-display--reversed .3s;
   -webkit-animation-fill-mode: forwards;

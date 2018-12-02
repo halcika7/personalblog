@@ -26,7 +26,7 @@
                 </li>
                 <li class="menu-links active"><a href="home">Home</a></li>
                 <li class="menu-links"><a href="about">About</a></li>
-                <li class="menu-links"><a href="portofolio">Portofolio</a></li>
+                <li class="menu-links"><a href="portfolio">Portfolio</a></li>
                 <li class="menu-links"><a href="service">Service</a></li>
                 <li class="menu-links"><a href="blog">Blog</a></li>
                 <li class="menu-links"><a href="contact">Contact</a></li>
@@ -47,7 +47,7 @@
         <div class="main-part">
             <div class="home active">
                 <h4>Hello World</h4>
-                <h1>Mr.Jake Weary</h1>
+                <h1>Mr.John Doe</h1>
                 <h3>Web designer & Developer</h3>
                 <ul class="icons">
                     <li class="icon"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -69,7 +69,7 @@
                 </div>
             </div>
 
-            <div class="portofolio">
+            <div class="portfolio">
                 <h1 class="title">What I done</h1>
                 <ul class="tabs">
                     <li class="tab-item all active"><a href="all">all</a></li>
@@ -430,7 +430,7 @@
         var navigation = document.querySelector('.navigation');
         var menu_links = document.querySelectorAll('.menu-links');
         var main_parts = document.querySelectorAll('.main-part > div');
-        var portofolio_tabs = document.querySelectorAll('.tab-item');
+        var portfolio_tabs = document.querySelectorAll('.tab-item');
         var work = document.querySelectorAll('.works > div');
 
 
@@ -483,7 +483,7 @@
 
         });
 
-        portofolio_tabs.forEach(item => {
+        portfolio_tabs.forEach(item => {
 
             item.addEventListener('click', e => {
                 e.preventDefault();
@@ -492,7 +492,7 @@
                     return;
                 }
 
-                portofolio_tabs.forEach(ev => {
+                portfolio_tabs.forEach(ev => {
                     ev.classList.remove('active');
                     work.forEach(en => {
                         en.classList.remove('active');
